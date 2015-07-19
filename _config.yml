@@ -1,0 +1,13 @@
+# Site settings
+title: Matt White
+email: matt@mattwhite.co
+description: > # this means to ignore newlines until "baseurl:"
+  The internet home of Matt White, author and programmer.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://mattwhite.co" # the base hostname & protocol for your site
+twitter_username: mattw59
+github_username:  mattw59
+ember2_book_link: https://pragprog.com/book/mwjsember/deliver-audacious-web-apps-with-ember-2
+ember2_book: Deliver Audacious Web Apps with Ember 2
+# Build settings
+markdown: kramdown
