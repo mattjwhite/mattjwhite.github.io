@@ -11,3 +11,19 @@ Consider an app with an admin section. Clearly you don't want this admin UI visi
  
 
 Keep mind that presentation layer security is necessary, but nowhere near sufficient to secure your app. Much more is required of your server-side code for your app to be secure. However, by securing your presentation layer, you're accomplishing an important goal of security: usability.
+
+{% highlight javascript %}
+import DS from "ember-data";
+
+export default DS.RESTAdapter.extend({
+  namespace: 'api', //Changed from api
+
+  headers: function() {
+    if(this.get('session.user')) {
+      return {
+        'username' : this.get('session.user').get('name')     
+      };
+    }
+  }.property('session.user')
+}); 
+{% endhighlight %}
