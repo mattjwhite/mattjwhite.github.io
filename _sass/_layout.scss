@@ -232,4 +232,11 @@
             font-size: 18px;
         }
     }
+    /**
+     * Links
+     */
+    a {
+        color: darken($brand-color, 15%);
+    }
+
 }
