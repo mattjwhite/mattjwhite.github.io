@@ -1,0 +1,13 @@
+Today I learned that debugging an initContainer can be difficult, since it's hard to see what's happening inside the container while it's running.
+To help with this, you can force the initContainer to sleep, which will let you shell in and take a look around.
+
+Just append this to your command: 
+`
+sleep 15m ; 
+`
+
+Now your initContainer will patiently wait 15 minutes for you to get a shell, look around, and figure out what the problem is. For reference, the shell command is 
+
+`
+kubectl exec -it <pod-name> -c <init-container-name> /bin/bash
+`
