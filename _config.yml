@@ -11,4 +11,3 @@ ember2_book_link: https://pragprog.com/book/mwjsember/deliver-audacious-web-apps
 ember2_book: Deliver Audacious Web Apps with Ember 2
 # Build settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll
